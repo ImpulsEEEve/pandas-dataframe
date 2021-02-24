@@ -1,0 +1,13 @@
+import pandas as pd
+
+pd.set_option('display.max_rows', None)
+pd.set_option('display.max_columns', None)
+pd.set_option('display.width', None)
+
+pokemon_df = pd.read_csv("Pokemon_Gen_1-8.csv")
+team_attack = pokemon_df.loc[0:20, ['Name', 'Type 1', 'Attack']]
+team_attack = team_attack.rename(columns={'Type 1':'Type_1'})
+
+team_attack_fire = team_attack[team_attack.Type_1 == 'Fire']
+
+print(team_attack_fire.sort_values('Attack', ascending = False))
