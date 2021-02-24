@@ -18,6 +18,7 @@ cars_df.insert(1, 'Model', ['Civic', 'Prius', 'Focus'], True)
 
 # add a new car
 cars_df.loc['Car 4'] = ['Hyundai', 'Avante', 20000, 2010]
+cars_df.loc['Car 3'] = ['Suzuki', 'Swift', 26000, 2013]
 
 # compute the discounted price
 cars_df['Discount'] = 0.1*cars_df['Price']
