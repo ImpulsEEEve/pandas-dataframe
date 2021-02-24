@@ -16,8 +16,12 @@ cars_df['Year'] = year
 # insert a new column
 cars_df.insert(1, 'Model', ['Civic', 'Prius', 'Focus'], True)
 
+# add a new car
+cars_df.loc['Car 4'] = ['Hyundai', 'Avante', 20000, 2010]
+
+# compute the discounted price
 cars_df['Discount'] = 0.1*cars_df['Price']
-cars_df['Discounted Price'] = cars_df['Price'] - 0.1*cars_df['Price']
+cars_df['Discounted Price'] = 0.9*cars_df['Price']
 
 # display the generated pandas dataframe
 print(cars_df)
