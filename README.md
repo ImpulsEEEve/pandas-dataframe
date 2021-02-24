@@ -18,3 +18,9 @@ source env/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+
+* Run Program (e.g., run `dataframe.py`)
+
+```bash
+python dataframepy
+```
