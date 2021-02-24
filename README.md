@@ -1,5 +1,7 @@
 # Intermediate Python Tutorial Notes
 
+Using Pandas to read and parse csv and xls files.
+
 ## Quickstart
 * Setup virtual environment
 
