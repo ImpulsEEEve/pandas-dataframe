@@ -1,6 +1,6 @@
 # Intermediate Python Tutorial Notes
 
-# Quickstart
+## Quickstart
 * Setup virtual environment
 
 ```bash
